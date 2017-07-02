@@ -1,0 +1,153 @@
+@import url('//fonts.googleapis.com/css?family=Poppins');
+
+$fcc-primary: #594022;
+$fcc-secondary: #95bf56;
+$fcc-accent: #bad9ce;
+
+
+*, :before, :after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins';
+}
+
+body {
+  background: $fcc-secondary;
+}
+
+a {
+  text-decoration: none;
+  &:link {
+    color: $fcc-secondary;
+  }
+  &:visited {
+    color: $fcc-secondary;
+  }
+  &:hover {
+    color: lighten($fcc-secondary, 15%);
+  }
+  &:active {
+    color:lighten($fcc-secondary, 15%);
+  }
+}
+
+img {
+  vertical-align: bottom;
+}
+
+table {
+  background: white;
+  margin: 2%;
+  width: 96%;
+  border: 2px solid gray;
+  border-collapse: collapse;
+  
+}
+
+thead {
+  background: lighten($fcc-accent, 15%);
+}
+
+tr {
+  
+  &:nth-child(even) {
+    background: lighten($fcc-accent, 15%);
+  }
+}
+
+td, th {
+  text-align: center;
+  border: 2px solid gray;
+}
+
+.everything {
+  
+}
+
+.big {
+  &Title {
+    background: $fcc-primary;
+    
+    padding: 1rem;
+    &__image {
+      width: 300px;
+      height: auto;
+    }
+    
+  }
+  &List {
+
+  }
+}
+
+.heading {
+  &__title {
+    background: $fcc-primary;
+    color: #eee;
+    font-size: 1.5rem;
+  }
+  &__sortBar {
+    height: 2rem;
+  }
+}
+
+.sortBar {
+  &__index {
+
+  }
+  
+  &__name {
+    text-align: left;
+    text-indent: 0.6rem;
+    
+  }
+  
+  &__recent {
+    cursor: pointer;
+    &:hover {
+      background: $fcc-secondary !important;
+    }
+  }
+  
+  &__alltime {
+    cursor: pointer;
+    &:hover {
+      background: $fcc-secondary !important;
+    }
+  }
+}
+
+.entry {
+
+  &__index {
+
+  }
+  
+  &__avatar {
+    width: 70px;
+    border-right: none;
+    
+    
+    &--image {
+      margin: 0.2rem;
+      border: 2px solid $fcc-secondary;
+      border-radius: 10%;
+      width: 50px;
+      height: auto;
+    }
+  }
+  
+  &__username {
+    text-align: left;
+    border-left: none;
+  }
+  
+  &__recentPoints {
+   
+  }
+  &__alltimePoints {
+
+  }
+}
+
